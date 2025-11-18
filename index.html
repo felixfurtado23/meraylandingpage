@@ -1000,23 +1000,27 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
   </div>
 
   <div class="mobile-nav-links">
+    <a href="#hero">
+        <i class="fas fa-home"></i>
+        Home
+    </a>
+    <a href="#product-overview">
+        <i class="fas fa-eye"></i>
+        Product
+    </a>
     <a href="#features">
-      <i class="fas fa-home"></i>
-      Home
+        <i class="fas fa-rocket"></i>
+        Features
     </a>
-    <a href="#integration">
-      <i class="fas fa-info-circle"></i>
-      About
+    <a href="#why-meray">
+        <i class="fas fa-trophy"></i>
+        Why Meray
     </a>
-    <a href="#testimonials">
-      <i class="fas fa-puzzle-piece"></i>
-      Integrations
+    <a href="#pricing">
+        <i class="fas fa-tag"></i>
+        Pricing
     </a>
-    <a href="#about">
-      <i class="fas fa-comments"></i>
-      Testimonials
-    </a>
-  </div>
+</div>
 
   <div class="mobile-auth-buttons">
     <a href="dashboard.html" class="btn btn-outline">
@@ -1088,16 +1092,17 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
         <i class="fas fa-bars"></i>
       </button>
 
-      <div class="nav-links">
-        <a href="#features">Home</a>
-        <a href="#integration">About</a>
-        <a href="#testimonials">Integrations</a>
-        <a href="#about">Testimonials</a>
-      </div>
+     <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#product-overview">Product</a>
+    <a href="#features">Features</a>
+    <a href="#why-meray">Why Meray</a>
+    <a href="#pricing">Pricing</a>
+</div>
 
       <div class="auth-buttons">
-        <a href="dashboard.html" class="btn btn-outline">Sign In</a>
-        <a href="#cta" class="btn btn-primary">Get Started</a>
+        <!-- <a href="dashboard.html" class="btn btn-outline">Sign In</a> -->
+        <a href="#early-bird-cta" class="btn btn-primary">Get Early Access</a>
       </div>
     </nav>
 
@@ -1107,18 +1112,18 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
         
     </style>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-texture"></div>
       <div class="hero-content">
         <div class="hero-text">
           <h1>Meray™ — Accounting & CRM, Reimagined.</h1>
           <p>Simple. Powerful. Built by UAE Accountants for UAE Businesses.</p>
           <div class="hero-buttons">
-            <a href="#cta" class="btn btn-primary" >
+            <a href="#early-bird-cta" class="btn btn-primary" >
               <i class="fas fa-rocket"></i>
               Get Early Access
             </a>
-            <a href="#demo" class="btn btn-outline"style="background-color:white">
+            <a href="#demo" class="btn btn-outline"style="">
               <i class="fas fa-play-circle"></i>
               Watch the Demo
             </a>
@@ -1342,7 +1347,7 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     }
 </style>
 
-<section class="product-overview">
+<section class="product-overview" id="product-overview">
     <div class="hero-background">
         <div class="bg-circle circle-1"></div>
         <div class="bg-circle circle-2"></div>
@@ -1741,7 +1746,7 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
 }
 </style>
 
-<section class="book-features">
+<section class="book-features" id="features">
     <div class="book-background">
         <div class="book-shape shape-1"></div>
         <div class="book-shape shape-2"></div>
@@ -2081,7 +2086,7 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     }
 </style>
 
-<section class="demo-section">
+<section class="demo-section" id="#demo">
     <div class="demo-background">
         <div class="demo-circle demo-circle-1"></div>
         <div class="demo-circle demo-circle-2"></div>
@@ -3104,7 +3109,7 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     background: rgba(255, 255, 255, 0.25);
     transition: all 0.3s ease;
 }
-
+/* Why Meray Section Responsive Styles */
 @media (max-width: 1024px) {
     .comparison-grid {
         grid-template-columns: 1fr;
@@ -3112,7 +3117,12 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     }
     
     .vs-divider {
-        order: -1;
+        order: 0;
+        margin: 1rem 0;
+    }
+    
+    .vs-circle {
+        margin: 0 auto;
     }
 }
 
@@ -3124,26 +3134,193 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     .value-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 1rem;
     }
     
-    .visual-features {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .value-card {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
     }
     
     .price-comparison {
-        padding: 2rem;
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
     }
     
     .comparison-grid {
         gap: 1.5rem;
     }
+    
+    .competitors-side, .meray-side {
+        gap: 1rem;
+    }
+    
+    .meray-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .visual-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .visual-item {
+        padding: 1rem 0.5rem;
+    }
+    
+    .visual-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .visual-text {
+        font-size: 0.9rem;
+    }
+    
+    .visual-subtext {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .value-grid {
+        padding: 0 0.5rem;
+    }
+    
+    .value-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-highlight {
+        font-size: 1.8rem;
+    }
+    
+    .price-comparison {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .comparison-title {
+        font-size: 1.5rem;
+    }
+    
+    .comparison-subtitle {
+        font-size: 1rem;
+    }
+    
+    .competitor-item {
+        padding: 0.8rem;
+    }
+    
+    .competitor-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .competitor-label {
+        font-size: 0.9rem;
+    }
+    
+    .competitor-price {
+        font-size: 0.8rem;
+    }
+    
+    .meray-card {
+        padding: 1.5rem;
+    }
+    
+    .meray-price-main {
+        font-size: 2rem;
+    }
+    
+    .meray-feature {
+        font-size: 0.85rem;
+    }
+    
+    .visual-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .visual-item {
+        padding: 0.8rem 0.3rem;
+    }
+    
+    .visual-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .visual-text {
+        font-size: 0.8rem;
+    }
+    
+    .visual-subtext {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .visual-features {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .visual-item {
+        padding: 0.8rem;
+    }
+}
+
+/* Ensure VS stays centered between User Limits and Best Value sections */
+@media (min-width: 769px) {
+    .vs-divider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .comparison-grid {
+        align-items: stretch;
+    }
+    
+    .competitors-side,
+    .meray-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 </style>
 
-
-<section class="why-meray">
-    <div class="meray-container">
+<section class="why-meray" >
+    <div class="meray-container" id="why-meray">
         <!-- Section Header -->
         <div class="section-header">
             <div class="section-badge">WHY MERAY</div>
@@ -3203,7 +3380,7 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
         </div>
 
         <!-- Enhanced Price Comparison -->
-        <div class="price-comparison">
+        <div class="price-comparison"  id="pricing">
             <div class="comparison-header">
                 <h3 class="comparison-title">Honest Pricing Comparison</h3>
                 <p class="comparison-subtitle">See why Meray offers better value than traditional accounting software</p>
@@ -3442,51 +3619,65 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     font-size: 0.9rem;
     line-height: 1.4;
 }
-
 .cta-buttons {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.cta-btn {
-    padding: 1.2rem 2rem;
+.cta-note {
+    padding: 1.5rem;
     border-radius: 12px;
-    font-weight: 600;
+    border: 1px solid var(--primary);
+    border-left: 4px solid var(--primary);
+    background: #375B6D;
+    
     text-decoration: none;
-    text-align: center;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    font-size: 1rem;
-    border: none;
+    gap: 1rem;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.cta-primary {
-    background: var(--primary);
-    color: white;
-    box-shadow: 0 8px 25px rgba(55, 91, 109, 0.3);
-}
 
-.cta-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(55, 91, 109, 0.4);
-}
 
-.cta-secondary {
-    background: transparent;
+
+.note-icon {
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary);
-    border: 2px solid var(--primary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
-.cta-secondary:hover {
-    background: var(--primary);
+
+
+.note-content {
+    flex: 1;
+}
+
+.note-title {
+    font-weight: 600;
     color: white;
-    transform: translateY(-2px);
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.note-desc {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cta-note:hover .note-title {
+    color: var(--primary);
 }
 
 .form-section {
@@ -3582,44 +3773,185 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     color: var(--text-light);
     line-height: 1.6;
 }
-
-@media (max-width: 968px) {
+/* Early Bird CTA Responsive Styles */
+@media (max-width: 1024px) {
+    .early-bird-cta {
+        padding: 80px 4%;
+    }
+    
+    .cta-card {
+        padding: 3rem 2.5rem;
+    }
+    
+    .cta-title {
+        font-size: 2.5rem;
+    }
+    
     .cta-content {
-        grid-template-columns: 1fr;
         gap: 3rem;
-    }
-    
-    .offer-section {
-        padding-right: 0;
-    }
-    
-    .cta-buttons {
-        flex-direction: row;
-        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
+    .early-bird-cta {
+        padding: 60px 3%;
+    }
+    
     .cta-card {
         padding: 2.5rem 2rem;
-        margin: 0 1rem;
+        margin: 0 0.5rem;
+        border-radius: 25px;
     }
     
     .cta-title {
         font-size: 2.2rem;
     }
     
+    .cta-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .cta-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .offer-section {
+        text-align: center;
+    }
+    
+    .offer-list {
+        margin-bottom: 2rem;
+    }
+    
+    .offer-item {
+        padding: 1rem 0.5rem;
+    }
+    
     .cta-buttons {
         flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-btn {
+        padding: 1.1rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .form-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .form-title {
+        font-size: 1.2rem;
     }
     
     .cta-curved-bg {
-        border-radius: 0 0 50px 50px;
+        border-radius: 0 0 40px 40px;
+        height: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .early-bird-cta {
+        padding: 50px 2%;
+    }
+    
+    .cta-card {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+    
+    .cta-badge {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .cta-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .offer-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 1rem 0;
+    }
+    
+    .offer-icon {
+        margin-top: 0;
+        align-self: center;
+    }
+    
+    .offer-main {
+        font-size: 1.1rem;
+    }
+    
+    .offer-desc {
+        font-size: 0.85rem;
+    }
+    
+    .cta-btn {
+        padding: 1rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .form-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .form-input {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+    
+    .submit-btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .thank-you-message {
+        padding: 2rem 1rem;
+    }
+    
+    .thank-you-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .thank-you-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cta-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .cta-title {
+        font-size: 1.6rem;
+    }
+    
+    .cta-buttons {
+        gap: 0.8rem;
+    }
+    
+    .cta-btn {
+        padding: 0.9rem 1rem;
     }
 }
 </style>
 
-<section class="early-bird-cta">
+<section class="early-bird-cta" id="early-bird-cta">
     <div class="cta-curved-bg"></div>
     
     <div class="cta-card">
@@ -3657,15 +3989,25 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
                 </ul>
 
                 <div class="cta-buttons">
-                    <a href="#signup" class="cta-btn cta-primary">
-                        <i class="fas fa-rocket"></i>
-                        Join the Early Bird Offer
-                    </a>
-                    <a href="#customization" class="cta-btn cta-secondary">
-                        <i class="fas fa-cog"></i>
-                        Starts from 48,000AED
-                    </a>
-                </div>
+    <a href="" class="cta-note cta-note-primary">
+        <div class="note-icon">
+            <i class="fas fa-rocket"></i>
+        </div>
+        <div class="note-content">
+            <div class="note-title">Join the Early Bird Offer</div>
+            <div class="note-desc">Get 50% off setup fee + 1 year free subscription</div>
+        </div>
+    </a>
+    <a href="" class="cta-note cta-note-secondary">
+        <div class="note-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="note-content">
+            <div class="note-title">Custom Solutions Available</div>
+            <div class="note-desc">Starts from 48,000 AED - Get a personalized quote</div>
+        </div>
+    </a>
+</div>
             </div>
 
             <!-- Form Section -->
@@ -3894,6 +4236,34 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
     <button class="back-to-top" onclick="scrollToTop()">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+    <script>
+        // Back to Top Functionality
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Show/hide back to top button with smooth transition
+window.addEventListener('scroll', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// Initialize back to top button
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    
+    // Add click event listener
+    backToTopButton.addEventListener('click', scrollToTop);
+});
+    </script>
     
     <div class="footer-container">
         <div class="footer-content">
@@ -3925,11 +4295,11 @@ background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)
             <div class="footer-column">
                 <h4 class="footer-heading">Product</h4>
                 <ul class="footer-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#demo">Demo</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                </ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#demo-section">Demo</a></li>
+    <li><a href="#early-bird-cta">Get Access</a></li>
+</ul>
             </div>
 
             <!-- Contact Column -->
