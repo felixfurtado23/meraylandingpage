@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meray - Unified CRM & Accounting Platform</title>
+    <title>Meray™</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -1992,236 +1992,186 @@
     </section>
 
     <!-- SECTION: Demo Video - Larger -->
-    <style>
-      .demo-section {
-        min-height: 90vh;
-        width: 95%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 4vw;
-        background: linear-gradient(
-          135deg,
-          var(--primary-dark) 0%,
-          var(--primary) 100%
-        );
-        margin: 40px auto;
-        position: relative;
-        overflow: hidden;
-        border-radius: 40px;
-      }
+<style>
+  .demo-section {
+    min-height: 90vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 4vw;
+    background: linear-gradient(
+      135deg,
+      var(--primary-dark) 0%,
+      var(--primary) 100%
+    );
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+  }
 
-      .demo-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
+  .demo-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-      .demo-header h2 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        letter-spacing: -1.5px;
-        margin-bottom: 15px;
-        color: white;
-      }
+  .demo-header h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+    color: white;
+  }
 
-      .demo-header .tagline {
-        font-size: 1.3rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 40px;
-        line-height: 1.6;
-        font-weight: 400;
-      }
+  .demo-header .tagline {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
 
-      .video-frame {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        border-radius: 24px;
-        overflow: hidden;
-        background: #fff;
-        border: 4px solid rgba(255, 255, 255, 0.4);
-        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4),
-          0 15px 35px rgba(0, 0, 0, 0.3);
-        transition: transform 0.6s ease, box-shadow 0.6s ease,
-          border-color 0.6s ease;
-        transform: perspective(1000px) rotateX(5deg) rotateY(-2deg);
-        transform-style: preserve-3d;
-        max-height: 70vh;
-      }
+  .video-frame {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4),
+      0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease, box-shadow 0.6s ease,
+      border-color 0.6s ease;
+    transform: perspective(1000px) rotateX(5deg) rotateY(-2deg);
+    transform-style: preserve-3d;
+  }
 
-      .video-frame:hover {
-        transform: perspective(1000px) rotateX(2deg) rotateY(-1deg)
-          translateY(-10px);
-        border-color: rgba(255, 255, 255, 0.6);
-        box-shadow: 0 45px 100px rgba(0, 0, 0, 0.5),
-          0 25px 60px rgba(0, 0, 0, 0.4);
-      }
+  .video-frame:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-1deg)
+      translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 45px 100px rgba(0, 0, 0, 0.5),
+      0 25px 60px rgba(0, 0, 0, 0.4);
+  }
 
-      .video-container {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        overflow: hidden;
-      }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
 
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+  }
 
-      .demo-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 1;
-      }
+  .demo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
 
-      .demo-circle {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.05);
-      }
+  .demo-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+  }
 
-      .demo-circle-1 {
-        width: 300px;
-        height: 300px;
-        top: -150px;
-        right: -100px;
-      }
+  .demo-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -100px;
+  }
 
-      .demo-circle-2 {
-        width: 200px;
-        height: 200px;
-        bottom: -100px;
-        left: -50px;
-      }
+  .demo-circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: -50px;
+  }
 
-      @media (max-width: 1200px) {
-        .video-frame {
-          max-width: 1000px;
-        }
+  @media (max-width: 1200px) {
+    .video-frame {
+      max-width: 1000px;
+    }
 
-        .demo-header h2 {
-          font-size: 3rem;
-        }
-      }
+    .demo-header h2 {
+      font-size: 3rem;
+    }
+  }
 
-      @media (max-width: 768px) {
-        .demo-section {
-          width: 90%;
-          padding: 40px 4vw;
-          min-height: 80vh;
-        }
+  @media (max-width: 768px) {
+    .demo-section {
+      width: 90%;
+      padding: 40px 4vw;
+      min-height: 80vh;
+    }
 
-        .demo-header h2 {
-          font-size: 2.5rem;
-        }
+    .demo-header h2 {
+      font-size: 2.5rem;
+    }
 
-        .demo-header .tagline {
-          font-size: 1.1rem;
-          margin-bottom: 30px;
-        }
+    .demo-header .tagline {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
 
-        .video-frame {
-          max-height: 60vh;
-        }
-      }
+    .video-frame {
+      max-height: none;
+    }
+  }
 
-      @media (max-width: 480px) {
-        .demo-header h2 {
-          font-size: 2rem;
-        }
+  @media (max-width: 480px) {
+    .demo-header h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
 
-        .video-frame {
-          max-height: 50vh;
-        }
-      }
-    </style>
+<section class="demo-section" id="demo">
+  <div class="demo-background">
+    <div class="demo-circle demo-circle-1"></div>
+    <div class="demo-circle demo-circle-2"></div>
+  </div>
 
-    <section class="demo-section" id="#demo">
-      <div class="demo-background">
-        <div class="demo-circle demo-circle-1"></div>
-        <div class="demo-circle demo-circle-2"></div>
+  <div class="demo-container">
+    <div class="demo-header">
+      <h2>See Meray in Action</h2>
+      <p class="tagline">90 seconds to understand everything</p>
+    </div>
+
+    <div class="video-frame">
+      <div class="video-container">
+        <video autoplay muted loop playsinline controls>
+          <source src="video 3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-
-      <div class="demo-container">
-        <div class="demo-header">
-          <h2>See Meray in Action</h2>
-          <p class="tagline">90 seconds to understand everything</p>
-        </div>
-
-        <style>
-
-
-/* Responsive heights */
-@media (max-width: 1024px) {
-    .video-container {
-        height: 300px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-container {
-        height: 200px;
-        width: 100%;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .video-container {
-        height: 250px;
-        width: 100%;
-
-    }
-}
-
-@media (max-width: 360px) {
-    .video-container {
-        height: 200px;
-        
-        width: 100%;
-
-    }
-}
-        </style>
-        <div class="video-frame">
-          <div class="video-container" style="height: 500px; padding-bottom: 0">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              controls
-              style="width: 100%; height: 100%; object-fit: cover"
-            >
-              <source
-                src="WhatsApp Video 2025-11-18 at 6.14.42 PM.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <style>
       .meray-story-section {
@@ -3933,227 +3883,227 @@
         line-height: 1.6;
       }
       /* Early Bird CTA Responsive Styles */
-     /* Early Bird CTA Responsive Styles */
-@media (max-width: 1024px) {
-    .early-bird-cta {
-        padding: 80px 4%;
-    }
-    
-    .cta-card {
-        padding: 3rem 2.5rem;
-    }
-    
-    .cta-title {
-        font-size: 2.5rem;
-    }
-    
-    .cta-content {
-        gap: 3rem;
-    }
-}
+      /* Early Bird CTA Responsive Styles */
+      @media (max-width: 1024px) {
+        .early-bird-cta {
+          padding: 80px 4%;
+        }
 
-@media (max-width: 768px) {
-    .early-bird-cta {
-        padding: 60px 3%;
-    }
-    
-    .cta-card {
-        padding: 2.5rem 2rem;
-        margin: 0 0.5rem;
-        border-radius: 25px;
-    }
-    
-    .cta-title {
-        font-size: 2.2rem;
-    }
-    
-    .cta-subtitle {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-    }
-    
-    .cta-content {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-    
-    .offer-section {
-        text-align: center;
-        padding-right: 0;
-    }
-    
-    .offer-list {
-        margin-bottom: 2rem;
-    }
-    
-    .offer-item {
-        padding: 1rem 0.5rem;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .offer-text {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    
-    .cta-buttons {
+        .cta-card {
+          padding: 3rem 2.5rem;
+        }
+
+        .cta-title {
+          font-size: 2.5rem;
+        }
+
+        .cta-content {
+          gap: 3rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .early-bird-cta {
+          padding: 60px 3%;
+        }
+
+        .cta-card {
+          padding: 2.5rem 2rem;
+          margin: 0 0.5rem;
+          border-radius: 25px;
+        }
+
+        .cta-title {
+          font-size: 2.2rem;
+        }
+
+        .cta-subtitle {
+          font-size: 1.1rem;
+          padding: 0 1rem;
+        }
+
+        .cta-content {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+
+        .offer-section {
+          text-align: center;
+          padding-right: 0;
+        }
+
+        .offer-list {
+          margin-bottom: 2rem;
+        }
+
+        .offer-item {
+          padding: 1rem 0.5rem;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .offer-text {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+        }
+
+        .cta-note {
+          width: 100%;
+          max-width: 400px;
+          padding: 1.2rem;
+        }
+
+        .form-section {
+          padding: 2rem 1.5rem;
+        }
+
+        .form-title {
+          font-size: 1.2rem;
+        }
+
+        .cta-curved-bg {
+          border-radius: 0 0 40px 40px;
+          height: 70%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .early-bird-cta {
+          padding: 50px 2%;
+        }
+
+        .cta-card {
+          padding: 2rem 1.5rem;
+          border-radius: 20px;
+        }
+
+        .cta-badge {
+          padding: 8px 20px;
+          font-size: 0.85rem;
+        }
+
+        .cta-title {
+          font-size: 1.8rem;
+          margin-bottom: 0.8rem;
+        }
+
+        .cta-subtitle {
+          font-size: 1rem;
+          padding: 0;
+        }
+
+        .offer-item {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.8rem;
+          padding: 1rem 0;
+        }
+
+        .offer-icon {
+          margin-top: 0;
+          align-self: center;
+        }
+
+        .offer-main {
+          font-size: 1.1rem;
+        }
+
+        .offer-desc {
+          font-size: 0.85rem;
+        }
+
+        .cta-note {
+          padding: 1rem;
+          flex-direction: column;
+          text-align: center;
+          gap: 0.8rem;
+        }
+
+        .note-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1rem;
+        }
+
+        .note-title {
+          font-size: 1rem;
+        }
+
+        .note-desc {
+          font-size: 0.8rem;
+        }
+
+        .form-section {
+          padding: 1.5rem 1rem;
+        }
+
+        .form-input {
+          padding: 0.9rem;
+          font-size: 0.95rem;
+        }
+
+        .submit-btn {
+          padding: 1rem;
+          font-size: 1rem;
+        }
+
+        .thank-you-message {
+          padding: 2rem 1rem;
+        }
+
+        .thank-you-icon {
+          width: 70px;
+          height: 70px;
+          font-size: 1.8rem;
+        }
+
+        .thank-you-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .cta-card {
+          padding: 1.5rem 1rem;
+        }
+
+        .cta-title {
+          font-size: 1.6rem;
+        }
+
+        .cta-buttons {
+          gap: 0.8rem;
+        }
+
+        .cta-note {
+          padding: 0.8rem;
+        }
+
+        .offer-item {
+          padding: 0.8rem 0;
+        }
+      }
+
+      /* Center align all offer items */
+      .offer-list {
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
         align-items: center;
-    }
-    
-    .cta-note {
+      }
+
+      .offer-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 400px;
-        padding: 1.2rem;
-    }
-    
-    .form-section {
-        padding: 2rem 1.5rem;
-    }
-    
-    .form-title {
-        font-size: 1.2rem;
-    }
-    
-    .cta-curved-bg {
-        border-radius: 0 0 40px 40px;
-        height: 70%;
-    }
-}
-
-@media (max-width: 480px) {
-    .early-bird-cta {
-        padding: 50px 2%;
-    }
-    
-    .cta-card {
-        padding: 2rem 1.5rem;
-        border-radius: 20px;
-    }
-    
-    .cta-badge {
-        padding: 8px 20px;
-        font-size: 0.85rem;
-    }
-    
-    .cta-title {
-        font-size: 1.8rem;
-        margin-bottom: 0.8rem;
-    }
-    
-    .cta-subtitle {
-        font-size: 1rem;
-        padding: 0;
-    }
-    
-    .offer-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.8rem;
-        padding: 1rem 0;
-    }
-    
-    .offer-icon {
-        margin-top: 0;
-        align-self: center;
-    }
-    
-    .offer-main {
-        font-size: 1.1rem;
-    }
-    
-    .offer-desc {
-        font-size: 0.85rem;
-    }
-    
-    .cta-note {
-        padding: 1rem;
-        flex-direction: column;
-        text-align: center;
-        gap: 0.8rem;
-    }
-    
-    .note-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-    
-    .note-title {
-        font-size: 1rem;
-    }
-    
-    .note-desc {
-        font-size: 0.8rem;
-    }
-    
-    .form-section {
-        padding: 1.5rem 1rem;
-    }
-    
-    .form-input {
-        padding: 0.9rem;
-        font-size: 0.95rem;
-    }
-    
-    .submit-btn {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    
-    .thank-you-message {
-        padding: 2rem 1rem;
-    }
-    
-    .thank-you-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 1.8rem;
-    }
-    
-    .thank-you-title {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .cta-card {
-        padding: 1.5rem 1rem;
-    }
-    
-    .cta-title {
-        font-size: 1.6rem;
-    }
-    
-    .cta-buttons {
-        gap: 0.8rem;
-    }
-    
-    .cta-note {
-        padding: 0.8rem;
-    }
-    
-    .offer-item {
-        padding: 0.8rem 0;
-    }
-}
-
-/* Center align all offer items */
-.offer-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.offer-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 400px;
-}
+      }
     </style>
 
     <section class="early-bird-cta" id="early-bird-cta">
@@ -4229,6 +4179,7 @@
                 <input
                   type="text"
                   class="form-input"
+                  name="name"
                   placeholder="Full Name"
                   required
                 />
@@ -4237,6 +4188,7 @@
                 <input
                   type="text"
                   class="form-input"
+                  name="company"
                   placeholder="Company Name"
                   required
                 />
@@ -4245,6 +4197,7 @@
                 <input
                   type="email"
                   class="form-input"
+                  name="email"
                   placeholder="Email Address"
                   required
                 />
@@ -4253,6 +4206,7 @@
                 <input
                   type="tel"
                   class="form-input"
+                  name="phone"
                   placeholder="Mobile Number"
                   required
                 />
@@ -4260,6 +4214,7 @@
               <div class="form-group">
                 <textarea
                   class="form-input form-textarea"
+                  name="message"
                   placeholder="What problems do you want Meray to solve? (Optional)"
                 ></textarea>
               </div>
@@ -4269,6 +4224,64 @@
               </button>
             </form>
 
+            <script>
+              document
+                .getElementById("earlyBirdForm")
+                .addEventListener("submit", async function (e) {
+                  e.preventDefault();
+
+                  const submitBtn = this.querySelector(".submit-btn");
+                  const originalText = submitBtn.innerHTML;
+
+                  // Show loading state
+                  submitBtn.innerHTML =
+                    '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                  submitBtn.disabled = true;
+
+                  try {
+                    const formData = {
+                      name: this.querySelector('input[name="name"]').value,
+                      company: this.querySelector('input[name="company"]')
+                        .value,
+                      email: this.querySelector('input[name="email"]').value,
+                      phone: this.querySelector('input[name="phone"]').value,
+                      message: this.querySelector('textarea[name="message"]')
+                        .value,
+                    };
+
+                    const response = await fetch(
+                      "http://localhost:5000/submit-early-access",
+                      {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(formData),
+                      }
+                    );
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                      showThankYouMessage();
+                    } else {
+                      alert("Error: " + result.message);
+                    }
+                  } catch (error) {
+                    alert("Network error. Please try again.");
+                  } finally {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                  }
+                });
+
+              function showThankYouMessage() {
+                document.getElementById("earlyBirdForm").style.display = "none";
+                document.getElementById("thankYouMessage").style.display =
+                  "block";
+              }
+            </script>
+
             <!-- Thank You Message -->
             <div id="thankYouMessage" class="thank-you-message">
               <div class="thank-you-icon">
@@ -4276,7 +4289,7 @@
               </div>
               <h3 class="thank-you-title">You're on the list!</h3>
               <p class="thank-you-text">
-                We'll send your demo access on Tuesday.
+                We'll contact you shortly
               </p>
             </div>
           </div>
