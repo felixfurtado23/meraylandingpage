@@ -4265,7 +4265,7 @@ document.getElementById("earlyBirdForm").addEventListener("submit", async functi
     console.log("Sending:", formData);
 
     try {
-        const response = await fetch("http://72.61.171.226:5080/submit-form", {
+        const response = await fetch("https://72.61.171.226.nip.io/submit-form", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
@@ -4758,3 +4758,4 @@ document.getElementById("earlyBirdForm").addEventListener("submit", async functi
     </script>
   </body>
 </html>
+
